@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 15px;
+}
+
+.planner {
+  max-width: 750px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.planner > h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #263238;
+}
+
+.clock {
+  background: #263b80;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.clock h1 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 140px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  border: none;
+  padding: 11px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task-form button {
+  background: #263b80;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filters button {
+  background: #ddd;
+}
+
+.filters .active {
+  background: #263b80;
+  color: white;
+}
+
+.task-list h2 {
+  margin-bottom: 15px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: #f5f6fa;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.task-info h3 {
+  margin-bottom: 7px;
+}
+
+.task-info p {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.task-info span {
+  font-size: 13px;
+  color: #263b80;
+}
+
+.completed {
+  opacity: 0.7;
+  background: #e2f7e9;
+}
+
+.completed .task-info h3 {
+  text-decoration: line-through;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.complete-btn {
+  background: #198754;
+  color: white;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: #eef2f7;
+  padding: 18px;
+  margin-top: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .planner {
+    padding: 18px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form input,
+  .task-form button {
+    width: 100%;
+  }
+
+  .summary {
+    flex-direction: column;
+  }
+}
