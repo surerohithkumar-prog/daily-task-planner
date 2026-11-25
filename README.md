@@ -1,16 +1,96 @@
-# React + Vite
+# Daily Task Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Daily Task Planner that I built to organize daily activities, manage tasks, and track my progress. I created this project while learning React and practicing frontend development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed
+- View all tasks
+- Filter completed and pending tasks
+- Live clock
+- Task progress tracking
+- Responsive user interface
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React JS
+- JavaScript
+- HTML
+- CSS
+- Vite
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+daily-task-planner/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+## How to Run the Project
+
+### Clone the repository
+
+```bash
+git clone https://github.com/surerohithkumar-prog/daily-task-planner.git
+```
+
+### Move into the project directory
+
+```bash
+cd daily-task-planner
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the application
+
+```bash
+npm run dev
+```
+
+## What I Learned
+
+While building this project, I practised:
+
+- Creating React functional components
+- Using React Hooks
+- Managing state using `useState`
+- Passing data through props
+- Handling user events
+- Using JavaScript `map()` and `filter()` methods
+- Dynamically updating the UI
+- Styling components using CSS
+
+## Future Improvements
+
+- Add Local Storage to save tasks
+- Add task deadlines and reminders
+- Add task priority options
+- Improve the user interface
+- Add dark mode
+
+## About Me
+
+Created by **Rohith Kumar** as part of my React JS learning journey.
+
+GitHub: https://github.com/surerohithkumar-prog
+```
+
+This version sounds more like **your own project documentation**: simple, professional, honest about what you built and what you learned, without exaggerated claims.
+
+If you'd like, I can also make your GitHub README look like a professional developer's portfolio while keeping the writing in your own voice.
